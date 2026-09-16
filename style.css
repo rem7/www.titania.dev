@@ -1,0 +1,24 @@
+@font-face{font-family:Raleway;src:url('./raleway.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:swap}
+:root{font-family:Raleway,Futura,'Century Gothic','Avenir Next',sans-serif;color:#272727;background:#f4f4f4;font-synthesis:none;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+body{margin:0}
+::selection{background:#292929;color:#fff}
+.page{max-width:1920px;min-height:100svh;margin:auto;padding:38px 56px 27px;display:flex;flex-direction:column}
+header{display:flex;justify-content:space-between;align-items:center;font-size:13px;letter-spacing:.07em;gap:24px}
+.identity{display:flex;align-items:center;gap:13px;text-decoration:none;color:inherit;font-size:14px;letter-spacing:.14em}
+.identity-line{display:block;width:32px;height:1px;background:#777}
+.identity:focus-visible{outline:1px solid #333;outline-offset:9px}
+.domain{color:#626262;letter-spacing:.06em}
+main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 0 65px}
+.composition{width:min(49vw,590px);height:clamp(230px,36vh,390px);display:grid;place-items:center;margin-bottom:4px}
+.form{display:block;width:auto;height:100%;max-width:100%;overflow:visible;color:#686868}
+.fractures path{fill:none;stroke:currentColor;stroke-width:.85;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.wordmark{width:100%;text-align:center}
+h1{font-size:clamp(64px,12.2vw,182px);font-weight:200;line-height:1.15;letter-spacing:.12em;margin:0 0 0 .12em;white-space:nowrap}
+.rd{font-size:.215em;letter-spacing:.035em;display:inline-block;vertical-align:top;margin-top:.47em;margin-left:.26em;font-weight:300}
+.caption{display:flex;justify-content:center;gap:12px;color:#626262;font-size:15px;font-weight:400;letter-spacing:.045em;margin-top:25px;line-height:1.7}
+footer{display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid #c6c6c6;padding-top:23px;color:#606060;font-size:12px;letter-spacing:.045em;line-height:1.6}
+.foot-mark{font-size:20px;font-weight:200;line-height:1;color:#777}
+@media(min-width:1500px){main{padding-bottom:95px}}
+@media(max-width:700px){.page{padding:26px 24px 23px}main{padding:30px 0 60px}.composition{width:93%;height:290px;margin-bottom:14px}h1{font-size:clamp(42px,12vw,85px);letter-spacing:.065em;margin-left:.065em}.rd{font-size:.22em;margin-left:.2em}.caption{font-size:14px;margin-top:25px;gap:0;flex-direction:column;align-items:center}footer{font-size:12px;align-items:flex-start;gap:14px}footer>span:first-child{max-width:155px}footer>span:last-child{text-align:right;max-width:100px}.foot-mark{display:none}}
+@media(max-height:700px) and (min-width:701px){.composition{height:210px}main{padding:25px 0 35px}h1{font-size:100px}}
